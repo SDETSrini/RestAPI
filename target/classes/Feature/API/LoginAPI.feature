@@ -1,7 +1,9 @@
 Feature: Login API 
 
-#SecondCommit
+
 #ThirdCommit
+
+>>>>>>> parent of acdfbae... secondchange
 
 @Sanity123
 Scenario: Verify Login API  - Status code :: 200 
