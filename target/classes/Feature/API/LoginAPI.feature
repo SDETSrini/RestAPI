@@ -1,5 +1,6 @@
 Feature: Login API 
 
+#Login API Scenarios
 
 @Sanity123
 Scenario: Verify Login API  - Status code :: 200 
