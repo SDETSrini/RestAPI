@@ -1,0 +1,214 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 24509288900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on HomePage",
+            "match": {
+              "location": "HomePageStepDefn.user_is_on_HomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5249152200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Close cookie policy and Deny notification",
+            "match": {
+              "location": "HomePageStepDefn.close_cookie_policy_and_Deny_notification()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Guest User checkout using CC",
+        "description": "",
+        "id": "timberland-sanity-testing;guest-user-checkout-using-cc;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3623909900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click \"Men\" and select \"T-Shirts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Men",
+                  "offset": 12
+                },
+                {
+                  "val": "T-Shirts",
+                  "offset": 29
+                }
+              ],
+              "location": "HomePageStepDefn.user_click_and_select(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4697879700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Select the first product",
+            "match": {
+              "location": "PLPStepDefn.select_the_first_product()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20254176600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Select the quantity size and proceed to cart",
+            "match": {
+              "location": "PDPStepDefn.select_the_quantity_size_and_proceed_to_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5246027300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User lands to cart page and proceed",
+            "match": {
+              "location": "CartStepDefn.user_lands_to_cart_page_and_proceed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14132300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User lands on Welcome page",
+            "match": {
+              "location": "WelcomeStepDefn.user_lands_on_Welcome_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8676293900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters \"test_001@yopmail.com\" and proceed as guest user",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test_001@yopmail.com",
+                  "offset": 13
+                }
+              ],
+              "location": "WelcomeStepDefn.user_enters_and_proceed_as_guest_user(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16487400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User lands on billing address page",
+            "match": {
+              "location": "BillingStepDefn.user_lands_on_billing_address_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6360363500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User enters billing address and proceed",
+            "match": {
+              "location": "BillingStepDefn.user_enters_billing_address_and_proceed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6654245800,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User lands on payment page",
+            "match": {
+              "location": "PaymentStepDefn.user_lands_on_payment_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8708725000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User pay using \"CC\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CC",
+                  "offset": 16
+                }
+              ],
+              "location": "PaymentStepDefn.user_pay_using(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4985006700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Verify order confirmation page",
+            "match": {
+              "location": "OrderConfStepDefn.verify_order_confirmation_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity123"
+          }
+        ]
+      }
+    ],
+    "name": "Timberland Sanity Testing",
+    "description": "",
+    "id": "timberland-sanity-testing",
+    "keyword": "Feature",
+    "uri": "src/main/java/Feature/UI/E2E.feature"
+  }
+]
