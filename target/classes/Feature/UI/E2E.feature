@@ -1,5 +1,7 @@
 Feature: Timberland Sanity Testing
 
+#Test
+
 Background: 
 	Given User is on HomePage 
 	And Close cookie policy and Deny notification 
